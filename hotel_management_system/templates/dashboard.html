@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>DASH | HOTEL MANAGEMENT</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <h2>WELCOME, {{username}}</h2>
+    <ul>
+        <li><a href="#">Customer registration</a></li>
+        <li><a href="#">Room Booking</a></li>
+        <li><a href="#">Room Information</a></li>
+        <li><a href="#">Check-in / Check-out</a></li>
+        <li><a href="#">Billing</a></li>
+    </ul>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
