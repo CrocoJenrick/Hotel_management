@@ -1,5 +1,0 @@
-Hotel_managment system requriements 
-
-pip install flask flask-MySQL
-pip install mysqlclient
-pip install mysql-connector-python    
