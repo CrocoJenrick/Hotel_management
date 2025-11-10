@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+</head>
+<body>
+    <div class="content-container">
+        <div class="header">
+            <input type="text" placeholder="Search...">
+
+        </div>
+        <div class="sidebar">
+            <img src="#" alt="User" class="avatar">
+            <h2 class="name"><h2>
+            <nav>
+                <a href="#" class="active" >Dashboard</a>
+                <a href="#"  >Booking</a>
+                <a href="#"  >Dashboard</a>
+                <a href="#"  >Dashboard</a>
+            </nav>
+            <a href="#" class="logout">Logout</a>
+        </div>
+        <div class="main-section">
+            <div class="overview">Overview</div>
+            <div class="room-available">Rooms</div>
+            <div class="guest-number">Guests</div>
+        </div>
+    </div>
+
+</body>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.content-container{
+    display: grid;
+    grid-template-rows: 240px, 1fr;
+    grid-template-columns: 75px, 1fr;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar main';
+    height: 100vh;
+
+}
+
+</style>
+</html>
+
