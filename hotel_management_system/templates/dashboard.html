@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard | Hotel Management</title>
+    <style>
+        body {
+            background-color: #fff8f0;
+            font-family: Arial, sans-serif;
+            color: #4b2e05;
+            margin: 0;
+            padding: 0;
+        }
+        .dashboard-container {
+            width: 600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        h2 {
+            color: #4b2e05;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        a {
+            text-decoration: none;
+            background-color: #4b2e05;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        a:hover {
+            background-color: #6b3f08;
+        }
+        .logout {
+            background-color: #a65f2b;
+        }
+        .logout:hover {
+            background-color: #8c4d22;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome, {{ username }}</h2>
+        <div class="menu">
+            <a href="{{ url_for('register_customer') }}">Customer Registration</a>
+            <a href="{{ url_for('view_customers') }}">View Customers</a>
+            <a href="{{ url_for('booking') }}">Room Booking</a>
+            <a href="{{ url_for('room_info') }}">Room Information</a>
+            <a href="{{ url_for('checkin_checkout') }}">Check-in / Check-out</a>
+            <a href="#">Billing</a>
+            <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
