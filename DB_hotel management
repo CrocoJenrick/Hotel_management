@@ -17,6 +17,10 @@ CREATE TABLE customers (
     email VARCHAR(100)
 );
 
+ALTER TABLE customers
+ADD CONSTRAINT fk_user
+FOREIGN KEY (user_id) REFERENCES users(id);
+
 CREATE TABLE rooms (
     id INT AUTO_INCREMENT PRIMARY KEY,
     room_number VARCHAR(10),
